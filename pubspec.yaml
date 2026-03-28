@@ -1,0 +1,35 @@
+name: fitflow
+description: FitFlow rebuilt video workout app
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  video_player: ^2.8.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.2
+  flutter_launcher_icons: ^0.14.3
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+    - assets/images/
+    - assets/videos/jumping_jacks.mp4
+    - assets/videos/PushUps.mp4
+    - assets/videos/Squats.mp4
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/logo.png
+  adaptive_icon_foreground: assets/logo.png
+  adaptive_icon_background: "#FFFFFF"
+  remove_alpha_ios: true
